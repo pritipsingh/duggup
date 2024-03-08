@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #141618;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    color: #141618;
+}
+h2{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19.36px;
+    color: #141618;
+}
+
+.name{
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    color:  #4B5C6D;
+    ;
+}
+
+.navname{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #4D4D4D;
+}
+
+.icon {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #4D4D4D;
+}
+
+.image {
+    box-sizing: border-box;
+    width: 120px; /* Define width in CSS */
+    height: 120px; /* Define height in CSS */
+    border-radius: 50%; /* Ensure the image is round */
+    border: 5px solid #EAEFF5;
+    object-fit: cover; /* Maintain aspect ratio */
+  }
+
+.detail{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.52px;
+    color: #7A9299;
+}
