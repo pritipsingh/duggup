@@ -12,27 +12,28 @@ html {
 }
 
 p {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 24px;
     color: #141618;
+
 }
 
 h1{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     line-height: 32px;
     color: #141618;
 }
 h2{
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 700;
     line-height: 19.36px;
     color: #141618;
 }
 
 .name{
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     line-height: 28px;
     color:  #4B5C6D;
@@ -40,14 +41,14 @@ h2{
 }
 
 .navname{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     color: #4D4D4D;
 }
 
 .icon {
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     line-height: 20px;
     color: #4D4D4D;
@@ -63,8 +64,40 @@ h2{
   }
 
 .detail{
-    font-size: 12px;
+    font-size: 8px;
     font-weight: 400;
     line-height: 14.52px;
     color: #7A9299;
 }
+
+
+@media only screen and (min-width: 768px) {
+    p {
+      font-size: 14px;
+    }
+
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 12px;
+    }
+
+    .name{
+        font-size: 20px;
+    }
+
+    .navname{
+        font-size: 20px;
+    }
+
+
+    .icon{
+        font-size: 14px;
+    }
+    .detail {
+        font-size: 12px;
+    }
+
+  }

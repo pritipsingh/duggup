@@ -25,7 +25,7 @@ function updateWordLimit(){
     if(window.innerWidth >= 1000 && window.innerWidth <= 1200){
         wordLimit = 8
     }else{
-        wordLimit = 13
+        wordLimit = 9
     }
     
 }
@@ -40,10 +40,10 @@ onMount(() => {
 })
 
 </script>
-<div class="w-full lg:max-w-[344px] h-auto lg:h-[226px] overflow-hidden rounded-[12px] bg-white border-[0.5px] border-[#D0D5DD]">
+<div class="lg:w-full max-w-[344px] self-start h-auto lg:h-[226px] overflow-hidden rounded-[12px] bg-white border-[0.5px] border-[#D0D5DD]">
     <div class="flex flex-col .detail">
         <img src={image} alt={"blogs's cover picture"} class="w-full h-[136px] object-cover"/>
-        <p class="p-[24px] w-full text-wrap text-left">{truncateText(para, wordLimit)}</p>
+        <p class="py-[24px] md:px-[16px] w-full text-wrap text-left">{truncateText(para, wordLimit)}</p>
         
     </div>
 

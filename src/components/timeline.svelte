@@ -66,18 +66,18 @@ import Container from "./container.svelte";
 
 <Container>
 
-<div class="w-full mt-[5vh] p-10 relative left-[60px]  border-l-2 border-dotted border-[#778FB1] ">
+<div class="max-w-full  mt-[5vh] ml-[2vw] lg:ml-0 p-10 relative left-[60px]  border-l-2 border-dotted border-[#778FB1] ">
     <div class="flex flex-col gap-[10vh] w-[80%]">
        
             {#each data as item}
 
                 {#if item.type === "Card"}
-                <div class="grid lg:grid-cols-2 cursor-pointer grid-cols-1 w-full gap-[3vw] place-items-center">
+                <div class="grid lg:grid-cols-2 lg:max-w-[80%] cursor-pointer grid-cols-1  gap-[15px] place-items-center">
                     {#each item.data as i}
                   
-                        <span class="absolute detail left-[-90px] ">{item.date}</span>
+                        <span class="absolute detail break-words lg:left-[-66px] left-[-53px]">{item.date}</span>
                     <img src={"images/icons/cardicon.svg"} alt="pointer" class="absolute w-[16px] left-[-9px]"/>
-                    <div>
+                    <div class="w-[100%]  lg:max-w-full">
                         <Card image= {i.image} para={i.para}/>
                     </div>
                      
@@ -88,16 +88,16 @@ import Container from "./container.svelte";
                  
                      {:else if item.type === "position"}
                     
-                     <div class="flex items-center ">
+                     <div class="flex items-center w-[100%]  lg:max-w-[80%] lg:justify-center">
                         <img src={"images/icons/arrowup.svg"} alt="pointer" class="relative h-[6px] left-[-47px] bottom-[10vh] z-[999]"/>
                      
 
                        
-                        <div class="absolute detail left-[-90px] ">
+                        <div class="absolute detail lg:left-[-148px] left-[-53px] ">
                             <div class="flex flex-col relative justify-center">
-                            <div class="absolute items-end flex gap-1 flex-col lg:left-[-80px]">
+                            <div class="absolute items-end flex gap-1 flex-col">
                             <img src={item.logo} alt={item.company} class="w-[48px]"/>
-                            <h2>{item.company}</h2>
+                            <h2 class="lg:whitespace-nowrap text-right">{item.company}</h2>
                             <div class="lg:whitespace-nowrap text-right">{item.area}</div>
                             <div>Joined</div>
                             <div>{item.date}</div>
@@ -107,7 +107,7 @@ import Container from "./container.svelte";
                         </div>
                         
                         <img src={"images/icons/abouticon.svg"} alt="pointer" class="absolute w-[28px] left-[-15px]"/>
-                        <div class="w-full">
+                        <div class="w-[100%] lg:max-w-full">
                          <About  title={item.title} bio={item.bio} extra={item.extra} />
                         </div>
                      </div>
