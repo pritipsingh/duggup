@@ -75,7 +75,7 @@ import Container from "./container.svelte";
                 <div class="grid lg:grid-cols-2 lg:max-w-[80%] cursor-pointer grid-cols-1  gap-[15px] place-items-center">
                     {#each item.data as i}
                   
-                        <span class="absolute detail break-words lg:left-[-66px] left-[-53px]">{item.date}</span>
+                        <span class="absolute detail break-words lg:left-[-68px] left-[-53px] md:left-[-68px]">{item.date}</span>
                     <img src={"images/icons/cardicon.svg"} alt="pointer" class="absolute w-[16px] left-[-9px]"/>
                     <div class="w-[100%]  lg:max-w-full">
                         <Card image= {i.image} para={i.para}/>
@@ -93,7 +93,7 @@ import Container from "./container.svelte";
                      
 
                        
-                        <div class="absolute detail lg:left-[-148px] left-[-53px] ">
+                        <div class="absolute detail lg:left-[-150px] left-[-53px] md:left-[-72px] ">
                             <div class="flex flex-col relative justify-center">
                             <div class="absolute items-end flex gap-1 flex-col">
                             <img src={item.logo} alt={item.company} class="w-[48px]"/>

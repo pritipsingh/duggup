@@ -43,7 +43,7 @@ onMount(() => {
 <div class="lg:w-full max-w-[344px] self-start h-auto lg:h-[226px] overflow-hidden rounded-[12px] bg-white border-[0.5px] border-[#D0D5DD]">
     <div class="flex flex-col .detail">
         <img src={image} alt={"blogs's cover picture"} class="w-full h-[136px] object-cover"/>
-        <p class="py-[24px] md:px-[16px] w-full text-wrap text-left">{truncateText(para, wordLimit)}</p>
+        <p class="py-[24px] px-[16px] w-full text-wrap text-left">{truncateText(para, wordLimit)}</p>
         
     </div>
 
