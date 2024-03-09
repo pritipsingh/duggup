@@ -66,18 +66,18 @@ import Container from "./container.svelte";
 
 <Container>
 
-<div class="max-w-full  mt-[5vh] ml-[2vw] lg:ml-0 p-10 relative left-[60px]  border-l-2 border-dotted border-[#778FB1] ">
-    <div class="flex flex-col gap-[10vh] w-[80%]">
+<div class="max-w-full  mt-[5vh] ml-[1vw] lg:ml-0 p-10 relative left-[60px]  border-l-2 border-dotted border-[#778FB1] ">
+    <div class="flex flex-col gap-[10vh] w-[100%] lg:w-[90%]">
        
             {#each data as item}
 
                 {#if item.type === "Card"}
-                <div class="grid lg:grid-cols-2 lg:max-w-[80%] cursor-pointer grid-cols-1  gap-[15px] place-items-center">
+                <div class="grid lg:grid-cols-2 max-w-[80%]  cursor-pointer grid-cols-1  gap-[25px] place-items-center place-content-between">
                     {#each item.data as i}
                   
                         <span class="absolute detail break-words lg:left-[-68px] left-[-53px] md:left-[-68px]">{item.date}</span>
                     <img src={"images/icons/cardicon.svg"} alt="pointer" class="absolute w-[16px] left-[-9px]"/>
-                    <div class="w-[100%]  lg:max-w-full">
+                    <div class="w-[100%] md:w-[344px] lg:w-[100%]   lg:max-w-full">
                         <Card image= {i.image} para={i.para}/>
                     </div>
                      
@@ -88,7 +88,7 @@ import Container from "./container.svelte";
                  
                      {:else if item.type === "position"}
                     
-                     <div class="flex items-center w-[100%]  lg:max-w-[80%] lg:justify-center">
+                     <div class="flex items-center w-[100%]  max-w-[80%] justify-center">
                         <img src={"images/icons/arrowup.svg"} alt="pointer" class="relative h-[6px] left-[-47px] bottom-[10vh] z-[999]"/>
                      
 
@@ -107,7 +107,7 @@ import Container from "./container.svelte";
                         </div>
                         
                         <img src={"images/icons/abouticon.svg"} alt="pointer" class="absolute w-[28px] left-[-15px]"/>
-                        <div class="w-[100%] lg:max-w-full">
+                        <div class="w-[100%] md:w-[344px] lg:w-[100%] ">
                          <About  title={item.title} bio={item.bio} extra={item.extra} />
                         </div>
                      </div>

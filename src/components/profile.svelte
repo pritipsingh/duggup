@@ -7,7 +7,6 @@ import {content} from '../lib/stores/session'
   import {userToFollow} from '../data/users'
   import { onMount } from "svelte";
 
- $: {console.log($content)}
   function handleClick() {
   $content = $content === 'Follow' ? 'Followed' : 'Follow';// This line is actually not needed since $content is auto-subscribed
 

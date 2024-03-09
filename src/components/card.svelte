@@ -21,7 +21,6 @@
 }
 
 function updateWordLimit(){
-    console.log(window.innerWidth)
     if(window.innerWidth >= 1000 && window.innerWidth <= 1200){
         wordLimit = 8
     }else{
@@ -30,7 +29,6 @@ function updateWordLimit(){
     
 }
 
-console.log(wordLimit)
 
 onMount(() => {
     updateWordLimit();
